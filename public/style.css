@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+footer{
+  margin-top:40px;
+}
+header h1{
+  text-align: center;
+}
+#userstories{
+  font-weight:bold;
+  font-size:16px;
+}
+blockquote{
+  background-color:lightpink;
+  margin-bottom:5px;
+}
+#sampleUse{
+   margin-left:50px; 
+}
+footer{
+  text-align:center;
+}
+  a{
+    color:green;
+  }
