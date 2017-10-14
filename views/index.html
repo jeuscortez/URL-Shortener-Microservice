@@ -1,0 +1,67 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Url Shortener Microservice</title>
+    <meta name="description" content="FCC API Project 2">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+       FreeCodeCamp API Basejump: URL Shortener Microservice
+      </h1>
+    </header>
+
+    <main>
+      <div id="userstories">
+      <blockquote>
+                User stories:
+                <ul>1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</ul>
+                <ul>2) If I pass an invalid URL that doesn't follow a valid website format (www.example.com), 
+                  the JSON response will contain an error instead.</ul>
+                <ul>3) When I visit that shortened URL, it will redirect me to my original link.</ul>
+      </blockquote>
+        <div id="sampleUse">
+      <h3>Example usage:</h3>
+            <code>https://jeuscortez-url-shortener-microservice.glitch.me/www.google.com</code><br>
+            <code>https://jeuscortez-url-shortener-microservice.glitch.me/3399</code>
+      <h3>Example Output for Creation of Short Version of URL:</h3>
+            <code>
+                {<br>
+              "originalUrl": "www.google.com",<br>
+              "shorterUrl": "3399",<br>
+              "_id": "59e17c9c7558e94fd4f26c04"<br>
+                }
+            </code>
+      <h3>Example Use with Short URL as Parameter</h3>
+          <code>https://jeuscortez-url-shortener-microservice.glitch.me/3399</code>
+      <h4>Will Redirect to: 
+        <a target = "_blank" href="https://www.google.com/">
+        https://www.google.com/
+      </a>
+        </h4>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a target = "_blank" href="https://github.com/jeuscortez">
+        Completed By: Jesus Cortez
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
