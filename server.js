@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 //set up connection to mongooseDB
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI);
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
